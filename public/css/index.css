@@ -1,0 +1,92 @@
+/* Alberto Mcwhirter-Javier
+index.css file for my expressJs Ejs portfolio site
+2023-05-06
+*/
+
+/*Header and navbar css */
+.header {
+    display: flex;
+    align-items: center;
+  }
+  .header img {
+    margin-right: 20px;
+  }
+  .header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  .header nav li {
+    margin-right: 20px;
+  }
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li {
+    margin-right: 20px;
+  }
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+  /*Contact form css */
+  .contactForm input {
+    margin-bottom: 10px;
+  }
+  .contactForm form {
+    border: 1px black;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  .contactForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px}
+  input[type="text"],
+  input[type="email"],
+  .contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box}
+  .contactForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .contactForm input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .contactForm {
+    border: 1px black;
+    padding: 20px;
+    width: 400px;
+    margin: 0;
+
+    }
+
+  *{
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 6px;
+    padding-top: 4px;
+  }
