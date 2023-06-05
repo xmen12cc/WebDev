@@ -1,0 +1,42 @@
+<%- include('../common/head') %>
+<body>
+    <header>
+        <%- include('../common/header') %>
+    </header>
+
+    <div>
+    <h1>Contact page</h1>
+    <li>Alberto Mcwhirter Javier</li>
+    <li>albertomcwirter@gmail.com</li>
+    <li>4372194232</li>
+    <li>1825 finch ave west, Toronto, M3N 1M7, Canada</li>
+    </div>
+    <br>
+    <!-- Contact form -->
+    <div class="contactForm">
+    <p style="font-size: larger"> Send your mesage </p>
+    <form action="" method="post" >
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br>
+      
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br>
+      
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" name="contact-number" required><br>
+      
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+      
+        <input type="submit" value="Submit" onclick="redirectToHomePage()">
+      </form>
+    </div>
+
+    <footer>
+        <%- include('../common/footer') %>
+    </footer>
+</body>
+</html>
