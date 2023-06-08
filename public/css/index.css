@@ -19,8 +19,8 @@ index.css file for my expressJs Ejs portfolio site
     margin-right: 20px;
   }
   .navbar {
-    background-color: #333;
-    color: #fff;
+    background-color: black;
+    color: yellow;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -85,8 +85,9 @@ index.css file for my expressJs Ejs portfolio site
     }
 
   *{
-    background-color: lavender;
+    background-color: grey;
     font-size: 1.25rem;
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 6px;
     padding-top: 4px;
