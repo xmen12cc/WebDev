@@ -5,6 +5,8 @@ index.css file for my expressJs Ejs portfolio site
 
 /*Header and navbar css */
 .header {
+    background-color: black;
+    color: yellow;
     display: flex;
     align-items: center;
   }
@@ -19,8 +21,6 @@ index.css file for my expressJs Ejs portfolio site
     margin-right: 20px;
   }
   .navbar {
-    background-color: black;
-    color: yellow;
     display: flex;
     justify-content: space-between;
     padding: 10px;
