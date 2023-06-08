@@ -85,6 +85,7 @@ index.css file for my expressJs Ejs portfolio site
     }
 
   *{
+    background-color: lavender;
     font-size: 1.25rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 6px;
