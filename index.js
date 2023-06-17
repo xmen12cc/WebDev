@@ -20,6 +20,12 @@ app.get('/contact', (req,res)=>{
 app.get('/services', (req,res)=>{
     res.render('pages/services');
 });
+app.get('/login', (req,res)=>{
+    res.render('pages/login');
+});
+app.get('/register', (req,res)=>{
+    res.render('pages/register');
+});2
 app.get('public/pdf/myresume.pdf', function(req, res) {  
     res.download('public/pdf/myresume.pdf');
 });
