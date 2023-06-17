@@ -1,7 +1,7 @@
 {
   "name": "expressportfolio-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "The node_modules folder needs to be downloaded from the zip file and extracted as I couldnt upload it to git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
-  }
+    "express-session": "^1.17.3",
+    "nodemon": "^2.0.22",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {}
 }

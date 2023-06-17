@@ -6,14 +6,14 @@
 
     <div class="Form">
         <p style="font-size: larger"> Login to website </p>
-        <form action="" method="post" >
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br>
+        <form action="/route/login" method="POST">
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required><br>
           
             <label for="password">Password:</label>
-            <input type="tel" id="password" name="password" required><br>
+            <input type="password" id="password" name="password" required><br>
 
-            <input type="submit" value="Submit" onclick="redirectToHomePage()">
+            <input type="submit" value="Submit">
           </form>
         </div>
 
