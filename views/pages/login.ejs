@@ -1,0 +1,24 @@
+<%- include('../common/head') %>
+<body>
+    <header>
+        <%- include('../common/header') %>
+    </header>
+
+    <div class="Form">
+        <p style="font-size: larger"> Login to website </p>
+        <form action="" method="post" >
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+          
+            <label for="password">Password:</label>
+            <input type="tel" id="password" name="password" required><br>
+
+            <input type="submit" value="Submit" onclick="redirectToHomePage()">
+          </form>
+        </div>
+
+    <footer>
+        <%- include('../common/footer') %>
+    </footer>
+</body>
+</html>

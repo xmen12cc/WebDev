@@ -55,29 +55,29 @@ text-decoration: underline;
   
 
   /*Contact form css */
-  .contactForm input {
+  .Form input {
     margin-bottom: 10px;
   }
-  .contactForm form {
+  .Form form {
     border: 1px black;
     padding: 20px;
     width: 400px;
     margin: 0 auto;
   }
-  .contactForm label {
+  .Form label {
     display: block;
     font-weight: bold;
     margin-bottom: 10px}
   input[type="text"],
   input[type="email"],
-  .contactForm textarea {
+  .Form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box}
-  .contactForm input[type="submit"] {
+  .Form input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -85,10 +85,10 @@ text-decoration: underline;
     border-radius: 10px;
     cursor: pointer;
   }
-  .contactForm input[type="submit"]:hover {
+  .Form input[type="submit"]:hover {
     background-color: #45a049;
   }
-  .contactForm {
+  .Form {
     border: 1px black;
     padding: 20px;
     width: 400px;
