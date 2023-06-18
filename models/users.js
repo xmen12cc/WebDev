@@ -1,15 +1,14 @@
-const mongoose = require('mongoose');
-// Define the schema for your data
-const userSchema = new mongoose.Schema({
-    username: String,
-    email: String
-    },
-    {
-      collection: "users"
-  });
-  
-  // Create a model based on the schema
-  const User = mongoose.model('User', userSchema);
-  
-  // Export the model for use in other parts of your application
-module.exports = User;
+let mongoose = require('mongoose');
+
+//Schema model for the users database collection
+let userModel = mongoose.Schema({
+  username: String,
+  email: String,
+  password: String,
+  contactNumber: String
+}, {
+  collection: "users"
+});
+
+//exporting the module so that it can be used on the index.js file
+module.exports = mongoose.model('User', userModel);

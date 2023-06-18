@@ -1,20 +1,25 @@
 var express = require('express');
-const { client } = require('./Files that prob wont use/db');
+const { client } = require('./db');
 var router = express.Router();
+const passport = require('passport');
+const User = require('./models/users');
 
-const credential = {
-    email:"admin@gmail.com",
-    password:"admin123"
-}
 
-router.post('/login', (req, res)=>{
-if(req.body.email == credential.email && req.body.password == credential.password){
-req.session.user = req.body.email;
-res.redirect('/');
-}
-else{
-    res.end("Invalid Username");
-}
+router.post('/login', async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const user = await User.findOne({ email });
+    if (user && user.password === password) {
+      req.session.user = user.email;
+      res.redirect('/contacts');
+    } else {
+        res.redirect('/login');
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).end("Internal Server Error");
+  }
 });
+
 
 module.exports = router;
