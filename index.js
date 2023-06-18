@@ -1,6 +1,7 @@
 //declaring variables
 let express = require('express');
 let app = express();
+
 const bodyparser = require('body-parser');
 const session = require('express-session');
 const{ v4:uuidv4 } = require('uuid');
@@ -36,19 +37,13 @@ app.get('public/pdf/myresume.pdf', function(req, res) {
     res.download('public/pdf/myresume.pdf');
 });
 
-function redirectToHomePage() {
-    window.location.href = "/";
-  }
+app.use(session({
+    secret: uuidv4(), 
+    resave: false,
+    saveUninitialized: true
+    }));
 
 //declaring the public folder and the init of the page on port 4000
-app.use(express.static('public'));
-
-app.use(session({
-secret: uuidv4(), 
-resave: false,
-saveUninitialized: true
-}));
-
 app.use('/route', router);
-
+app.use(express.static('public'));
 app.listen(4000);
