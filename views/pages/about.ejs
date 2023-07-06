@@ -5,21 +5,25 @@
     </header>
 
     <!-- About me page with image of me and the download link to my resume pdf -->
-    <div>
-    <legend><h2>About me</h2></legend>          
-    <h3>Full name</h3>
-    <p>Alberto Mcwhirter Javier</p>
-    <h3>This is me</h3>
-    <img src="/images/Me.PNG" alt="Me" height="200px" width="200px">
-    <h3>Who am I?</h3>
-    <p>Hello, my name is Alberto and I am a developing software engineer, specifically in the field of game dev, I am currently enrolled in semester 3 of game dev on Centennial College, I am always eager to improve my skills and learn new things. On my free time I usually watch anime or play videogames, I also enjoy building computers.</p>
-    
-    <h3>My resume</h3>
-    <p><a href="/pdf/myresume.pdf" download>Get the Pdf</a></p>
+    <div class="container">
+        <legend><h2>About me</h2></legend>          
+        <h3>Full name</h3>
+        <p>Alberto Mcwhirter Javier</p>
+        <h3>This is me</h3>
+        <br>
+        <img src="/images/Me.PNG" alt="Me" class="img-fluid rounded-circle" style="max-height: 200px; max-width: 200px;">
+        <br><br>
+        <h3>Who am I?</h3>
+        <b></b>
+        <p>Hello, my name is Alberto and I am a developing software engineer, specifically in the field of game dev. I am currently enrolled in semester 3 of game dev at Centennial College. I am always eager to improve my skills and learn new things. In my free time, I usually watch anime or play videogames. I also enjoy building computers.</p>
+        
+        <h3>My resume</h3>
+        <p><a href="/pdf/myresume.pdf" class="btn btn-primary" download>Get the PDF</a></p>
     </div>
 
     <footer>
         <%- include('../common/footer') %>
     </footer>
+    </div>
 </body>
 </html>

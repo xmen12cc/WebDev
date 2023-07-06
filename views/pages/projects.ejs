@@ -4,20 +4,29 @@
         <%- include('../common/header') %>
     </header>
     
-    <h1>Projects page</h1>
-    <h2>Previous projects:</h2>
+    <div class="container">
+        <h1>Projects page</h1>
+        <h2>Previous projects:</h2>
 
-    <img src="/images/tree.png" alt="" height="200px" width="200px">
-    <p>This was a tree I had to model using blender for a group project on 3d assets.</p>
-
-    <img src="/images/computer.png" alt="" height="200px" width="200px">
-    <p>This is my personal computer (PC) I built myself and it works very well</p>
-
-    <img src="/images/UnityGame.png" alt="" height="200px" width="200px">
-    <p>This is a 2d game I developed along classmates, this was a group project and I was mainly in charge of asset design but also did other things such as coding.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/images/tree.png" alt="" class="img-fluid">
+                <p>This was a tree I had to model using Blender for a group project on 3D assets.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="/images/computer.png" alt="" class="img-fluid">
+                <p>This is my personal computer (PC) I built myself and it works very well.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="/images/UnityGame.png" alt="" class="img-fluid">
+                <p>This is a 2D game I developed along with classmates. It was a group project, and I was mainly in charge of asset design but also did other things such as coding.</p>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <%- include('../common/footer') %>
     </footer>
+</div>
 </body>
 </html>
