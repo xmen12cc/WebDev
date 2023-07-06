@@ -12,6 +12,7 @@ const { v4: uuidv4 } = require('uuid');
 const router = require('./router');
 
 const User = require('./models/users');
+const Message = require('./models/message');
 
 //set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -109,6 +110,23 @@ app.post('/contacts/add', async (req, res) => {
     const user = new User({ username, contactNumber, email });
     await user.save();
     res.redirect('/contacts');
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
+app.post('/contact/message', async (req, res) => {
+  try {
+    const { name, lastName, contactNum, email, message } = req.body;
+    const newMessage = new Message({ 
+      Name: name,
+      LastName: lastName,
+      ContactNum: contactNum,
+      Email: email,
+      Message: message });
+    await newMessage.save();
+    res.redirect('/contact');
   } catch (error) {
     console.error(error);
     res.status(500).send('Internal Server Error');
