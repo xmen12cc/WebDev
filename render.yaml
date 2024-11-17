@@ -1,0 +1,13 @@
+# Exported from Render on 2024-11-17T18:27:31Z
+services:
+- type: web
+  name: AlbertoWebPortfolio
+  runtime: node
+  repo: https://github.com/xmen12cc/WebDev
+  plan: free
+  region: oregon
+  buildCommand: 'npm i node mongoose mongodb express ejs passport passport-local uuid
+    express-session body-parser '
+  startCommand: node index.js
+  autoDeploy: false
+version: "1"
