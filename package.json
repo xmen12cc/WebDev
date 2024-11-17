@@ -1,7 +1,7 @@
 {
   "name": "webdev",
   "version": "1.0.0",
-  "description": "The node_modules folder needs to be downloaded from the zip file and extracted as I couldnt upload it to git",
+  "description": "The node_modules folder needs to be downloaded from the zip file and extracted as I couldn't upload it to git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,10 +17,12 @@
     "express-session": "^1.17.3",
     "mongodb": "^5.6.0",
     "mongoose": "^7.3.0",
-    "node": "^20.2.0",
     "nodemon": "^1.14.9",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
