@@ -4,19 +4,10 @@
         <%- include('../common/header') %>
     </header>
 
-    <div class="container">
-        <h1>Contact page</h1>
-        <ul class="list-unstyled">
-            <li>Alberto Mcwhirter Javier</li>
-            <li>albertomcwirter@gmail.com</li>
-            <li>4372194232</li>
-            <li>1825 Finch Ave West, Toronto, M3N 1M7, Canada</li>
-        </ul>
-    </div>
     <br>
     <!-- Contact form -->
     <div class="container">
-        <p style="font-size: larger">Send your message</p>
+        <h2>Send your message</h2>
         <form action="/contact/message" method="post" class="needs-validation">
             <div class="form-group">
                 <label for="first-name">First Name:</label>
@@ -42,9 +33,9 @@
         </form>
     </div>
 
-    <footer>
-        <%- include('../common/footer') %>
-    </footer>
-</div>
+<br>
 </body>
+<footer class="footer">
+    <%- include('../common/footer') %>
+</footer>
 </html>

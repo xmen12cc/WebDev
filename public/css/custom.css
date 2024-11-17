@@ -1,7 +1,87 @@
-body{
-    background-color: lightgrey;
-    color: purple;
-    font-family: monospace;
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #023047;
+    background-color: #8ecae6;
+    font-family: klavika-web;
+    font-size: 20px;
 }
 
+.container {
+    flex: 1;
+}
 
+p{
+    font-size: 20px;
+}
+
+.footerP{
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-container div {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+.footer {
+    background-color: #023047;
+    padding: 20px;
+    text-align: left;
+    color: #fb8500;
+    position: relative;
+    width: 100%;
+}
+
+  .footer.home{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #023047;
+    padding: 20px;
+    text-align: left;
+    color: #fb8500;
+}
+
+/* Social media things */
+.social-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .social-buttons .social-icon {
+    margin-left: 10px;
+    display: inline-block;
+  }
+  
+  .social-buttons .social-icon img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid white;
+    background-color: #023047;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-buttons .social-icon img:hover {
+    transform: scale(1.1);
+    border-color: #fb8500;
+    background-color: #fb8500;
+  }
+  
+  .navbar-brand img {
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+  }

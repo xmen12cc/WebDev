@@ -11,7 +11,6 @@ const session = require('express-session');
 const { v4: uuidv4 } = require('uuid');
 const router = require('./router');
 
-const User = require('./models/users');
 const Message = require('./models/message');
 
 //set the view engine to ejs
@@ -23,9 +22,6 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.render('pages/home');
 });
-app.get('/about', (req, res) => {
-  res.render('pages/about');
-});
 app.get('/projects', (req, res) => {
   res.render('pages/projects');
 });
@@ -35,19 +31,7 @@ app.get('/contact', (req, res) => {
 app.get('/services', (req, res) => {
   res.render('pages/services');
 });
-app.get('/login', (req, res) => {
-  res.render('pages/login');
-});
 
-app.get('/register', (req, res) => {
-  res.render('pages/register');
-});
-app.get('/editUser', (req, res) => {
-  res.render('pages/editUser');
-});
-app.get('/contacts/add', (req, res) => {
-  res.render('pages/addUser');
-});
 app.get('/public/pdf/myresume.pdf', function (req, res) {
   res.download('public/pdf/myresume.pdf');
 });
@@ -57,64 +41,6 @@ app.use(session({
   resave: false,
   saveUninitialized: true
 }));
-
-// Fetch the data from mongodb database to the webpage /contacts also it sorts them alphabetically
-app.get('/contacts', async (req, res) => {
-  try {
-    const users = await User.find().sort({ username: 1 });
-    res.render('pages/contacts', { userList: users });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Internal Server Error');
-  }
-});
-
-// Find user by id and call editUser to edit its contents
-app.get('/contacts/edit/:id', async (req, res) => {
-  try {
-    const user = await User.findById(req.params.id);
-    res.render('pages/editUser', { user: user });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Internal Server Error');
-  }
-});
-
-// Update the contents of the users
-app.post('/contacts/update/:id', async (req, res) => {
-  try {
-    const { username, contactNumber, email } = req.body;
-    await User.findByIdAndUpdate(req.params.id, { username, contactNumber, email });
-    res.redirect('/contacts');
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Internal Server Error');
-  }
-});
-
-// Find user by id and deletes it from the db and from the table
-app.get('/contacts/delete/:id', async (req, res) => {
-  try {
-    await User.findByIdAndRemove(req.params.id);
-    res.redirect('/contacts');
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Internal Server Error');
-  }
-});
-
-// Function to add a new user to the db and the table, enter username, contactnum and email to add a new user
-app.post('/contacts/add', async (req, res) => {
-  try {
-    const { username, contactNumber, email } = req.body;
-    const user = new User({ username, contactNumber, email });
-    await user.save();
-    res.redirect('/contacts');
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Internal Server Error');
-  }
-});
 
 app.post('/contact/message', async (req, res) => {
   try {

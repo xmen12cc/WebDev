@@ -4,54 +4,67 @@ index.css file for my expressJs Ejs portfolio site
 */
 
 /*Header and navbar css */
-  .header {
+/* Header and navbar CSS */
+.header {
   background-color: black;
   color: yellow;
   display: flex;
   align-items: center;
-  }
-  .header img {
+}
+
+.header img {
   margin-right: 20px;
-  }
-  .header nav ul {
+}
+
+.header nav ul {
   display: flex;
   list-style: none;
-  }
-  .header nav li {
+}
+
+.header nav li {
   margin-right: 20px;
-  }
-  .navbar {
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  }
-  .navbar ul {
+}
+
+.navbar ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  }
-  .navbar li {
+}
+
+.navbar li {
   margin-right: 30px;
-  }
-  .navbar li a {
+}
+
+.navbar li a {
   background-color: yellow;
   color: grey;
   padding: 10px;
   border-radius: 5px;
-  }
-  .navbar li.current a,
-  .navbar li a:hover {
+}
+
+.navbar li.current a,
+.navbar li a:hover {
   background-color: white;
   color: black;
-  }
-  .navbar a {
+}
+
+.navbar a {
   color: #fff;
   text-decoration: none;
-  }
-  .navbar a:hover {
+}
+
+.navbar a:hover {
   text-decoration: underline;
-  }
+}
+
+
   
   /*Contact form css */
   .Form input {
