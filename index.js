@@ -22,9 +22,24 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.render('pages/home');
 });
+
+//Project pages
 app.get('/projects', (req, res) => {
   res.render('pages/projects');
 });
+app.get('/projects/project1', (req, res) => {
+  res.render('pages/project1');
+});
+app.get('/projects/project2', (req, res) => {
+  res.render('pages/project2');
+});
+app.get('/projects/project3', (req, res) => {
+  res.render('pages/project3');
+});
+app.get('/projects/project4', (req, res) => {
+  res.render('pages/project4');
+});
+
 app.get('/contact', (req, res) => {
   res.render('pages/contact');
 });

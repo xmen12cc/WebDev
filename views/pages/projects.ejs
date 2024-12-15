@@ -1,30 +1,51 @@
 <%- include('../common/head') %>
-<body>
+<body class="projects-page">
     <header>
         <%- include('../common/header') %>
     </header>
-    
+    <%- include('../common/ProjectHeader') %>
     <div class="container">
-        <h1>Projects page</h1>
-        <h2>Previous projects:</h2>
-
         <div class="row">
-            <div class="col-md-4">
-                <img src="/images/tree.png" alt="" class="img-fluid">
-                <p>This was a tree I had to model using Blender for a group project on 3D assets.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="/images/computer.png" alt="" class="img-fluid">
-                <p>This is my personal computer (PC) I built myself and it works very well.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="/images/UnityGame.png" alt="" class="img-fluid">
-                <p>This is a 2D game I developed along with classmates. It was a group project, and I was mainly in charge of asset design but also did other things such as coding.</p>
+            <div class="col-sm-12">
+                <!-- Scrollable container for project entries -->
+                <div class="project-entries-container">
+                    <!-- Project Entries -->
+                    <div class="">
+                        <div class="project-card">
+                            <img src="/images/tree.png" alt="" class="img-fluid">
+                            <p>This was a tree I had to model using Blender for a group project on 3D assets.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="project-card">
+                            <img src="/images/computer.png" alt="" class="img-fluid">
+                            <p>This is my personal computer (PC) I built myself and it works very well.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="project-card">
+                            <img src="/images/UnityGame.png" alt="" class="img-fluid">
+                            <p>This is a 2D game I developed along with classmates. It was a group project, and I was mainly in charge of asset design but also did other things such as coding.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="project-card">
+                            <img src="/images/UnityGame.png" alt="" class="img-fluid">
+                            <p>This is a 2D game I developed along with classmates. It was a group project, and I was mainly in charge of asset design but also did other things such as coding.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="project-card">
+                            <img src="/images/UnityGame.png" alt="" class="img-fluid">
+                            <p>This is a 2D game I developed along with classmates. It was a group project, and I was mainly in charge of asset design but also did other things such as coding.</p>
+                        </div>
+                    </div>
+                    <!-- Add more project entries as needed -->
+                     
+                </div>
             </div>
         </div>
     </div>
-
-</div>
 </body>
 <footer class="footer">
     <%- include('../common/footer') %>
