@@ -43,8 +43,8 @@ app.get('/projects/project4', (req, res) => {
 app.get('/contact', (req, res) => {
   res.render('pages/contact');
 });
-app.get('/services', (req, res) => {
-  res.render('pages/services');
+app.get('/about', (req, res) => {
+  res.render('pages/about');
 });
 
 app.get('/public/pdf/myresume.pdf', function (req, res) {
