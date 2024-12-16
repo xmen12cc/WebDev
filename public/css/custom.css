@@ -76,7 +76,7 @@ p {
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #023047;
+  background-color: rgb(2, 48, 71);
   width: 100%;
   z-index: 1000;
 }
@@ -197,7 +197,7 @@ img {
 
 /* Expanded Navbar */
 .fixed-left .navbar-collapse {
-  position:absolute;
+  position: absolute;
   top: 70px;
   padding-top: 0px;
   padding-right: 0px;
@@ -226,7 +226,7 @@ img {
   left: 50px;
   padding-top: 0px;
   padding-right: 0px;
-  background-color: #023047; /* Dark background for expanded navbar */
+  background-color: rgba(255, 0, 0, 0);
 }
 
 .fixed-left .navbar-collapse {
@@ -235,7 +235,7 @@ img {
   left: 10px;
   padding-top: 0px;
   padding-right: 0px;
-  background-color: #023047; /* Dark background for expanded navbar */
+  background-color: rgba(255, 0, 0, 0); /* Dark background for expanded navbar */
 }
 
 /* Layout Helpers */
@@ -360,7 +360,7 @@ img {
       padding-top: 0px;
       padding-bottom: 0px;
       z-index: 1000;
-    }
+  }
   
   .projects-page .project-entries-container {
     grid-template-columns: repeat(auto-fill, minmax(25px, 25px));
@@ -368,15 +368,15 @@ img {
   }
 
   /* Navbar Toggle Button */
-.fixed-left .navbar-toggler {
-  background-color: #023047; /* Dark background to match the navbar */
-  border: none;
-  color: #fb8500;
-  font-size: 20px;
-  position: absolute;
-  padding: 0;
-  margin: 0;
-}
+  .fixed-left .navbar-toggler {
+    background-color: #023047; /* Dark background to match the navbar */
+    border: none;
+    color: #fb8500;
+    font-size: 20px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+  }
 
   .navbar-toggler {
     background-color: #023047; /* Dark background to match the navbar */
@@ -389,7 +389,7 @@ img {
 
   .navbar-collapse {
     position: absolute;
-    top: 75px;
+    top: 70px;
     right: 0px;
     background-color: #023047; /* Dark background for expanded navbar */
   }
