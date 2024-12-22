@@ -24,8 +24,8 @@ app.get('/', (req, res) => {
 });
 
 //Project pages
-app.get('/projects', (req, res) => {
-  res.render('pages/projects');
+app.get('/projectsOverview', (req, res) => {
+  res.render('pages/projectsOverview');
 });
 app.get('/projects/project1', (req, res) => {
   res.render('pages/project1');
@@ -38,6 +38,14 @@ app.get('/projects/project3', (req, res) => {
 });
 app.get('/projects/project4', (req, res) => {
   res.render('pages/project4');
+});
+
+app.get('/projects/project5', (req, res) => {
+  res.render('pages/project5');
+});
+
+app.get('/projects/ITProjects', (req, res) => {
+  res.render('pages/ITProjects');
 });
 
 app.get('/contact', (req, res) => {
