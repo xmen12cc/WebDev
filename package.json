@@ -1,5 +1,5 @@
 {
-  "name": "webdev",
+  "name": "albertowebportfolio",
   "version": "1.0.0",
   "description": "The node_modules folder needs to be downloaded from the zip file and extracted as I couldn't upload it to git",
   "main": "index.js",

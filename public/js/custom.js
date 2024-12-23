@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
             navbarToggler2.setAttribute('aria-expanded', !isExpanded);
         });
     }
-    console.log(navbarCollapse1);
-    console.log(navbarCollapse2);
 });
 
 

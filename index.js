@@ -27,25 +27,23 @@ app.get('/', (req, res) => {
 app.get('/projectsOverview', (req, res) => {
   res.render('pages/projectsOverview');
 });
-app.get('/projects/project1', (req, res) => {
-  res.render('pages/project1');
-});
-app.get('/projects/project2', (req, res) => {
-  res.render('pages/project2');
-});
-app.get('/projects/project3', (req, res) => {
-  res.render('pages/project3');
-});
-app.get('/projects/project4', (req, res) => {
-  res.render('pages/project4');
-});
-
-app.get('/projects/project5', (req, res) => {
-  res.render('pages/project5');
-});
-
 app.get('/projects/ITProjects', (req, res) => {
   res.render('pages/ITProjects');
+});
+app.get('/projects/TheEternalCity', (req, res) => {
+  res.render('pages/TheEternalCity');
+});
+app.get('/projects/PuzzleMania', (req, res) => {
+  res.render('pages/PuzzleMania');
+});
+app.get('/projects/MyThirdPersonShooter', (req, res) => {
+  res.render('pages/MyThirdPersonShooter');
+});
+app.get('/projects/DungeonMaster', (req, res) => {
+  res.render('pages/DungeonMaster');
+});
+app.get('/projects/IdleSpaceRockMiner', (req, res) => {
+  res.render('pages/IdleSpaceRockMiner');
 });
 
 app.get('/contact', (req, res) => {
